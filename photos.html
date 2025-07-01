@@ -52,16 +52,24 @@
   <a href="index.html">&larr; Back to Home</a>
 </header>
 
-<div class="gallery">
-  <img src="gallery/photo1.jpg" alt="Performance Photo 1">
-  <img src="gallery/photo2.jpg" alt="Performance Photo 2">
-  <img src="gallery/photo3.jpg" alt="Performance Photo 3">
-  <!-- Add more images in the /gallery folder and name them photo4.jpg, photo5.jpg, etc. -->
+<div class="gallery" id="gallery">
+  <!-- Images will be auto-loaded here -->
 </div>
 
 <footer>
   <p>&copy; 2025 Aidan Miland. All rights reserved.</p>
 </footer>
+
+<script>
+  const gallery = document.getElementById('gallery');
+  for (let i = 1; i <= 20; i++) {
+    const img = new Image();
+    img.src = `gallery/photo${i}.jpg`;
+    img.alt = `Performance Photo ${i}`;
+    img.onerror = () => img.remove(); // remove if image doesn't exist
+    gallery.appendChild(img);
+  }
+</script>
 
 </body>
 </html>
