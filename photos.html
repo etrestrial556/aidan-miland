@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aidan Miland | Photo Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+    header {
+      background-color: #111;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header a {
+      color: #ccc;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Photo Gallery</h1>
+  <a href="index.html">&larr; Back to Home</a>
+</header>
+
+<div class="gallery">
+  <img src="gallery/photo1.jpg" alt="Performance Photo 1">
+  <img src="gallery/photo2.jpg" alt="Performance Photo 2">
+  <img src="gallery/photo3.jpg" alt="Performance Photo 3">
+  <!-- Add more images in the /gallery folder and name them photo4.jpg, photo5.jpg, etc. -->
+</div>
+
+<footer>
+  <p>&copy; 2025 Aidan Miland. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
